@@ -14,5 +14,9 @@ class HelloWorld
             B [i] = a;
             i = i + 1;
         }
+        Console.WriteLine(" ");
+        foreach(string a in B)
+        Console.Write(a + "; ");
+        Array.Resize(ref A, i);
     }
 }
