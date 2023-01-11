@@ -7,6 +7,12 @@ class HelloWorld
         foreach(string a in A)
         Console.Write(a + " ");
         int i = 0;
-        
+        string[] B = new string[A.Length];
+        foreach (string a in A)
+        if(a.Length <= 3)
+        {
+            B [i] = a;
+            i = i + 1;
+        }
     }
 }
